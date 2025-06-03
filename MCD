@@ -1,0 +1,19 @@
+🗃️ Table User
+- id (INT, PK)
+- email (VARCHAR)
+- password (VARCHAR)  // bcrypt
+
+🗃️ Table Quiz
+- id (INT, PK)
+- titre (VARCHAR)
+
+🗃️ Table Question
+- id (INT, PK)
+- texte (TEXT)
+- quiz_id (INT, FK -> Quiz.id)
+
+🗃️ Table Answer
+- id (INT, PK)
+- texte (VARCHAR)
+- is_correct (BOOLEAN)
+- question_id (INT, FK -> Question.id)
